@@ -1,18 +1,16 @@
 import { Link as RouterLink } from "react-router-dom";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Card, Stack, Link, Container, Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 // routes
 import { PATH_AUTH } from "../../routes/paths";
 // hooks
 import useResponsive from "../../hooks/useResponsive";
 // components
 import Page from "../../components/Page";
-import Logo from "../../components/Logo";
 import { Grid, Box } from "@mui/material";
 // sections
 import { LoginForm } from "../../sections/auth/login";
-import Label from "src/components/Label";
 
 // ----------------------------------------------------------------------
 
@@ -41,24 +39,26 @@ export default function Login() {
   return (
     <Page title="Login">
       <RootStyle>
-        {/* <Box sx={{ padding: "20px" }}>
-          <Label color="info" sx={{ ml: 1 }}>
-            HOPE
-          </Label>
-        </Box> */}
-
         <Grid
           container
           direction="row"
           justifyContent="space-around"
           alignItems="center"
         >
-          <Grid item sm={5} sx={{ textAlign: "center" }}>
-            <Typography
-              variant="h2"
-              sx={{ px: 5, mt: 10, mb: 5 }}
-              textAlign="center"
-            >
+          <Grid
+            item
+            sm={12}
+            md={6}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Box>
+              <img src="/assets/loginLogo.png" alt="logo" height={"400px"} />
+            </Box>
+            <Typography variant="h2" sx={{ px: 5, mt: 3 }} textAlign="center">
               Log in to our <br /> community
             </Typography>
             Not a member of the community? {""}
@@ -71,7 +71,7 @@ export default function Login() {
             </Link>
           </Grid>
 
-          <Grid item sm={5} sx={{ textAlign: "center" }}>
+          <Grid item sm={12} md={6} sx={{ textAlign: "center" }}>
             <ContentStyle>
               <LoginForm />
             </ContentStyle>

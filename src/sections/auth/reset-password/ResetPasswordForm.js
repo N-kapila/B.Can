@@ -1,15 +1,15 @@
-import * as Yup from 'yup';
-import { useNavigate } from 'react-router-dom';
+import * as Yup from "yup";
+import { useNavigate } from "react-router-dom";
 // form
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useForm } from 'react-hook-form';
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
 // @mui
-import { Stack } from '@mui/material';
-import { LoadingButton } from '@mui/lab';
+import { Stack } from "@mui/material";
+import { LoadingButton } from "@mui/lab";
 // routes
-import { PATH_AUTH } from '../../../routes/paths';
+import { PATH_AUTH } from "../../../routes/paths";
 // components
-import { FormProvider, RHFTextField } from '../../../components/hook-form';
+import { FormProvider, RHFTextField } from "../../../components/hook-form";
 
 // ----------------------------------------------------------------------
 
@@ -17,12 +17,14 @@ export default function ResetPasswordForm() {
   const navigate = useNavigate();
 
   const ResetPasswordSchema = Yup.object().shape({
-    email: Yup.string().email('Email must be a valid email address').required('Email is required'),
+    email: Yup.string()
+      .email("Email must be a valid email address")
+      .required("Email is required"),
   });
 
   const methods = useForm({
     resolver: yupResolver(ResetPasswordSchema),
-    defaultValues: { email: 'demo@minimals.cc' },
+    defaultValues: { email: "demo@gmail.com" },
   });
 
   const {
@@ -34,7 +36,7 @@ export default function ResetPasswordForm() {
     try {
       await new Promise((resolve) => setTimeout(resolve, 500));
 
-      sessionStorage.setItem('email-recovery', data.email);
+      sessionStorage.setItem("email-recovery", data.email);
 
       navigate(PATH_AUTH.newPassword);
     } catch (error) {
@@ -47,7 +49,13 @@ export default function ResetPasswordForm() {
       <Stack spacing={3}>
         <RHFTextField name="email" label="Email address" />
 
-        <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={isSubmitting}>
+        <LoadingButton
+          fullWidth
+          size="large"
+          type="submit"
+          variant="contained"
+          loading={isSubmitting}
+        >
           Send Request
         </LoadingButton>
       </Stack>

@@ -1,6 +1,7 @@
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // form
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -17,7 +18,6 @@ import { LoadingButton } from "@mui/lab";
 // routes
 import { PATH_AUTH } from "../../../routes/paths";
 // hooks
-import useAuth from "../../../hooks/useAuth";
 import useIsMountedRef from "../../../hooks/useIsMountedRef";
 // components
 import Iconify from "../../../components/Iconify";
@@ -29,6 +29,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 // ----------------------------------------------------------------------
 
 export default function LoginForm() {
+  const navigate = useNavigate();
   const isMountedRef = useIsMountedRef();
 
   const [showPassword, setShowPassword] = useState(false);
@@ -63,6 +64,7 @@ export default function LoginForm() {
       //console.log(data);
       await signInWithEmailAndPassword(auth, data.email, data.password);
       alert("Login Successfully");
+      navigate("/");
       // console.log("success");
       reset();
     } catch (error) {
@@ -117,18 +119,23 @@ export default function LoginForm() {
       >
         <Box>
           Forgot password?{" "}
-          {/* <Link
+          <Link
             component={RouterLink}
             variant="subtitle2"
             to={PATH_AUTH.resetPassword}
-          > */}
-          <Link href="#" underline="hover">
+          >
+            {/* <Link href="/resetPassword" underline="hover"> */}
             Reset here
           </Link>
         </Box>
       </Stack>
 
-      <LoadingButton type="submit" variant="contained" loading={isSubmitting}>
+      <LoadingButton
+        fullWidth
+        type="submit"
+        variant="contained"
+        loading={isSubmitting}
+      >
         Sign in
       </LoadingButton>
     </FormProvider>
