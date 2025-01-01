@@ -17,18 +17,18 @@ const menuConfig = [
     icon: <Iconify icon={"eva:home-fill"} {...ICON_SIZE} />,
     path: PATH_PAGE.home,
   },
-  {
-    title: "About You",
-    icon: <Iconify icon={"gg:profile"} {...ICON_SIZE} />,
-    path: "#",
-  },
-  {
-    title: "Community",
-    icon: (
-      <Iconify icon={"fluent:people-community-add-28-filled"} {...ICON_SIZE} />
-    ),
-    path: "#",
-  },
+  // {
+  //   title: "About You",
+  //   icon: <Iconify icon={"gg:profile"} {...ICON_SIZE} />,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Community",
+  //   icon: (
+  //     <Iconify icon={"fluent:people-community-add-28-filled"} {...ICON_SIZE} />
+  //   ),
+  //   path: "#",
+  // },
 
   {
     title: "Pages",
