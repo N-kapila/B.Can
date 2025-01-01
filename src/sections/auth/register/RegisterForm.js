@@ -1,5 +1,6 @@
 import * as Yup from "yup";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // form
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -17,9 +18,11 @@ import { FormProvider, RHFTextField } from "../../../components/hook-form";
 import { auth, db } from "src/Config/Firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { setDoc, doc } from "firebase/firestore";
+import { PATH_AUTH } from "src/routes/paths";
 // ----------------------------------------------------------------------
 
 export default function RegisterForm() {
+  const navigate = useNavigate();
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
   const { register } = useAuth();
@@ -86,6 +89,7 @@ export default function RegisterForm() {
       const ref = doc(db, "userinfo", result.user.uid);
       const docRef = await setDoc(ref, data);
       alert("Registered Successfully");
+      navigate(PATH_AUTH.login);
       reset();
     } catch (error) {
       setError("afterSubmit", { ...error, message: error.message });

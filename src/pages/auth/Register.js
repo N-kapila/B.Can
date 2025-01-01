@@ -43,27 +43,34 @@ export default function Register() {
   return (
     <Page title="Register">
       <RootStyle>
-        {/* <Box sx={{}}>
-          <Label color="secondary" sx={{ ml: 1 }}>
-            HOPE
-          </Label>
-        </Box> */}
         <Grid
           container
           direction="row"
           justifyContent="space-around"
           alignItems="center"
         >
-          <Grid item sm={4}>
+          <Grid
+            item
+            sm={4}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <Typography
               variant="h3"
-              sx={{ px: 5, mt: 10, mb: 5 }}
+              sx={{ px: 5, mt: 10, mb: 3 }}
               textAlign="center"
             >
               Join our <br />
               community
             </Typography>
-            <hr />
+
+            <Box>
+              <img src="/assets/loginLogo.png" alt="logo" height={"300px"} />
+            </Box>
+
             <Box>
               <ul>
                 <Icon icon="arcticons:nrf-connect" inline={true} /> Connect with
@@ -80,17 +87,14 @@ export default function Register() {
                 peronalized for you. delivered directly to you
               </ul>
               <br />
-              <Typography variant="body2" sx={{ mt: { md: -2 } }}>
-                <br />
-                <Link
-                  variant="subtitle2"
-                  component={RouterLink}
-                  to={PATH_AUTH.register}
-                >
-                  Watch a message
-                </Link>{" "}
-                from the Breastcancer.org community
-              </Typography>
+              Already member of the community? {""}
+              <Link
+                variant="subtitle2"
+                component={RouterLink}
+                to={PATH_AUTH.login}
+              >
+                Log in Now
+              </Link>
             </Box>
           </Grid>
 
