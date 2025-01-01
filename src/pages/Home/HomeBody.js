@@ -31,7 +31,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
 
 function Textf(props) {
   return (
-    <Box sx={{ backgroundColor: "#df9bf8 ", borderRadius: "5%" }}>
+    <Box sx={{ backgroundColor: "#e6bdf4  ", borderRadius: "5%" }}>
       <Grid
         container
         direction="row"

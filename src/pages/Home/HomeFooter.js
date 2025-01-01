@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import SocialsButton from "src/components/SocialsButton";
 
 function BottomLinks(props) {
@@ -41,7 +41,7 @@ export default function RowAndColumnSpacing() {
         alignItems="center"
         minHeight="5px"
       >
-        <Grid item sm={5}>
+        <Grid item sm={5} sx={{ p: 5 }}>
           <h2>
             <b>
               People with breastcancer need answers,guidance,and community.
@@ -51,17 +51,18 @@ export default function RowAndColumnSpacing() {
           </h2>
 
           <Box sx={{ padding: "10px", textAlign: "left" }}>
-            <Button variant="contained">Donete</Button>
+            <Button variant="contained">Donate</Button>
           </Box>
 
-          <Box>
+          <Box sx={{ mt: 2 }}>
             <BottomLinks name="Polices |" />
             <BottomLinks name="Privacy  |" />
             <BottomLinks name="Term of Use  |" />
             <BottomLinks name="Site map" />
           </Box>
         </Grid>
-        <Grid item sm={5}>
+
+        <Grid item sm={5} sx={{ pt: { xs: 1, sm: 5 }, p: 5 }}>
           <Box>
             <h2>
               <b>Stay informed mail with us</b>
@@ -73,15 +74,16 @@ export default function RowAndColumnSpacing() {
               </b>
             </p>
           </Box>
-          <Box>
+          <Box display={"flex"}>
             <TextField
+              sx={{ width: "80%" }}
               id="filled-multiline-flexible"
               label="Email"
               multiline
               maxRows={4}
               variant="standard"
             />
-            <IconButton aria-label="submit" style={{ paddingTop: "20px" }}>
+            <IconButton aria-label="submit">
               <ArrowForwardIcon />
             </IconButton>
           </Box>
