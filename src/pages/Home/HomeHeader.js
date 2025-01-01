@@ -9,6 +9,7 @@ import {
   Toolbar,
   Container,
   Typography,
+  Link,
 } from "@mui/material";
 // hooks
 import useOffSetTop from "../../hooks/useOffSetTop";
@@ -80,15 +81,24 @@ export default function HomeHeader() {
             justifyContent: "space-between",
           }}
         >
-          {/* <Logo /> */}
-          <img src="/logo/logo.png" alt="logo" width="30" height="50" />
-          <Typography
-            sx={{ ml: 1, color: "purple", fontFamily: "sans-serif" }}
-            variant="h4"
-            gutterBottom
+          {/* Logo  */}
+          <Link
+            href="/"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              textDecoration: "none",
+            }}
           >
-            HOPE
-          </Typography>
+            <img src="/logo/logo.png" alt="logo" width="30" height="50" />
+            <Typography
+              sx={{ ml: 1, color: "purple", fontFamily: "sans-serif" }}
+              variant="h4"
+              gutterBottom
+            >
+              HOPE
+            </Typography>
+          </Link>
 
           <Box sx={{ flexGrow: 1 }} />
 

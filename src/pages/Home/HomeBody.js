@@ -31,26 +31,44 @@ const ContentStyle = styled("div")(({ theme }) => ({
 
 function Textf(props) {
   return (
-    <Box sx={{ backgroundColor: "#e6bdf4  ", borderRadius: "5%" }}>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-around"
-        alignItems="flex-start"
+    <Box
+      sx={{
+        backgroundColor: "#e6bdf4  ",
+        borderRadius: "5%",
+        textAlign: "center",
+        p: 1,
+      }}
+    >
+      <Box item sm={5}>
+        <h2 style={{ padding: "10px" }}> {props.sub}</h2>
+      </Box>
+      <Box
+        item
+        sm={3}
+        xs={0}
+        sx={{
+          display: { sm: "block" },
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
       >
-        <Grid item sm={5}>
-          <h2 style={{ padding: "10px" }}> {props.sub}</h2>
-        </Grid>
-        <Grid item sm={3} xs={0} sx={{ display: { xs: "none", sm: "block" } }}>
-          {props.image && (
-            <img
-              src={props.image}
-              alt="Description"
-              style={{ maxWidth: "100%", borderRadius: "5%" }}
-            />
-          )}
-        </Grid>
-      </Grid>
+        {props.image && (
+          <img
+            src={props.image}
+            alt="Description"
+            style={{
+              maxWidth: "100%",
+              borderRadius: "5%",
+              height: "100px",
+              display: "block", // Ensures the image behaves like a block element
+              marginLeft: "auto", // Center image horizontally
+              marginRight: "auto", // Center image horizontally
+            }}
+          />
+        )}
+      </Box>
+
       <Box style={{ textAlign: "center" }}>
         <p>{props.des}</p>
       </Box>
@@ -91,8 +109,7 @@ export default function HomeBody() {
                 </p>
                 <Box
                   sx={{
-                    textAlign: "center",
-                    padding: "20px",
+                    pt: "20px",
                   }}
                 >
                   <Button variant="outlined" href="#">
@@ -210,14 +227,14 @@ export default function HomeBody() {
               <Textf
                 sub="In treatment "
                 des="Learn how to effectively work with your doctors, manage potential side effects, and navigate the many changes in your daily life while undergoing "
-                image="/assets/img8.svg"
+                image="/assets/img9.png"
               />
             </Item>
             <Item>
               <Textf
                 sub="Hope chat"
                 des=" Hope is a chat-bot based on Knowledge Based designed to prescreen women for female breast cancer symptoms via a textual question answer   "
-                image="/assets/img8.svg"
+                image="/assets/img10.png"
               />
             </Item>
           </Stack>
