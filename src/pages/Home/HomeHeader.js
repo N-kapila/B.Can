@@ -2,7 +2,14 @@ import { useLocation } from "react-router-dom";
 import { Link as RouterLink } from "react-router-dom";
 // @mui
 import { styled, useTheme } from "@mui/material/styles";
-import { Box, Button, AppBar, Toolbar, Container } from "@mui/material";
+import {
+  Box,
+  Button,
+  AppBar,
+  Toolbar,
+  Container,
+  Typography,
+} from "@mui/material";
 // hooks
 import useOffSetTop from "../../hooks/useOffSetTop";
 import useResponsive from "../../hooks/useResponsive";
@@ -10,9 +17,6 @@ import useResponsive from "../../hooks/useResponsive";
 import cssStyles from "../../utils/cssStyles";
 // config
 import { HEADER } from "../../config";
-// components
-import Logo from "../../components/Logo";
-import Label from "../../components/Label";
 //
 
 import { PATH_AUTH } from "src/routes/paths";
@@ -77,10 +81,15 @@ export default function HomeHeader() {
           }}
         >
           {/* <Logo /> */}
-
-          <Label color="info" sx={{ ml: 1 }}>
+          <img src="/logo/logo.png" alt="logo" width="30" height="50" />
+          <Typography
+            sx={{ ml: 1, color: "purple", fontFamily: "sans-serif" }}
+            variant="h4"
+            gutterBottom
+          >
             HOPE
-          </Label>
+          </Typography>
+
           <Box sx={{ flexGrow: 1 }} />
 
           {isDesktop && (
@@ -93,7 +102,6 @@ export default function HomeHeader() {
 
           <Button
             variant="contained"
-            target="_blank"
             rel="noopener"
             to={PATH_AUTH.login}
             component={RouterLink}
