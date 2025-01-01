@@ -31,7 +31,7 @@ const ContentStyle = styled("div")(({ theme }) => ({
 
 function Textf(props) {
   return (
-    <Box style={{ backgroundColor: "#ECD1EC", borderRadius: "5%" }}>
+    <Box sx={{ backgroundColor: "#df9bf8 ", borderRadius: "5%" }}>
       <Grid
         container
         direction="row"
@@ -39,13 +39,16 @@ function Textf(props) {
         alignItems="flex-start"
       >
         <Grid item sm={5}>
-          <h3 style={{ paddingTop: "10px" }}> {props.sub}</h3>
+          <h2 style={{ padding: "10px" }}> {props.sub}</h2>
         </Grid>
-        <Grid item sm={3}>
-          <Image
-            style={{ width: 100, height: 100 }}
-            src="/assets/illustrations/illustration_login.png"
-          />
+        <Grid item sm={3} xs={0} sx={{ display: { xs: "none", sm: "block" } }}>
+          {props.image && (
+            <img
+              src={props.image}
+              alt="Description"
+              style={{ maxWidth: "100%", borderRadius: "5%" }}
+            />
+          )}
         </Grid>
       </Grid>
       <Box style={{ textAlign: "center" }}>
@@ -66,15 +69,17 @@ export default function HomeBody() {
   return (
     <container>
       <ContentStyle sx={{ textAlign: "center", alignItems: "center" }}>
-        <m.div>
+        <m.div style={{ width: "80%" }}>
           <Grid
             container
             direction="row"
             justifyContent="center"
             alignItems="center"
-            style={{ paddingBottom: "100px" }}
+            sx={{
+              paddingBottom: "100px",
+            }}
           >
-            <Grid item sm={8}>
+            <Grid item sm={6}>
               <Item>
                 <h1>
                   We Are Ready To Help {"&"} Take Care Your Breast Canser Health{" "}
@@ -84,8 +89,12 @@ export default function HomeBody() {
                   Trusted guidance when us most. Because no one should face
                   breast cancer alone.
                 </p>
-
-                <Box style={{ textAlign: "left", padding: "20px" }}>
+                <Box
+                  sx={{
+                    textAlign: "center",
+                    padding: "20px",
+                  }}
+                >
                   <Button variant="outlined" href="#">
                     {" "}
                     About us
@@ -93,42 +102,20 @@ export default function HomeBody() {
                 </Box>
               </Item>
             </Grid>
-            <Grid item sm={4}>
+            <Grid item sm={6}>
               <Item>
-                <Image
-                  style={{ width: 200, height: 200 }}
-                  src="/assets/illustrations/illustration_login.png"
-                />
+                <Image src="/assets/img1.jpg" />
               </Item>
             </Grid>
           </Grid>
 
           <Grid
             container
-            direction="row"
+            direction={{ xs: "row", sm: "row-reverse" }}
             justifyContent="center"
             alignItems="center"
             style={{ paddingBottom: "100px" }}
           >
-            <Grid item sm={6}>
-              <Item>
-                <Stack spacing={2}>
-                  <Item>
-                    <Image
-                      style={{ width: 200, height: 200 }}
-                      src="/assets/illustrations/illustration_login.png"
-                    />
-                  </Item>
-                  <Item>
-                    {" "}
-                    <Image
-                      style={{ width: 200, height: 200 }}
-                      src="/assets/illustrations/illustration_login.png"
-                    />
-                  </Item>
-                </Stack>
-              </Item>
-            </Grid>
             <Grid item sm={6}>
               <Item>
                 <h1>
@@ -136,20 +123,43 @@ export default function HomeBody() {
                 </h1>
                 <p>
                   {" "}
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. <br />
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the <br />
-                  1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  Marisa C. Weiss, MD, founded Breastcancer.org because cancer
+                  patients need more time to ask critical questions about their
+                  care than what's typically provided during a doctor's
+                  appointment. Today, Breastcancer.org is an education and
+                  support lifeline for millions of people affected by breast
+                  cancer. As a digital resource, we're here for everyone, in all
+                  corners of the world, at any time of the day or night. We help
+                  people find reliable answers to questions about their risk,
+                  diagnosis, treatment plan, surgical options, and more so they
+                  can live a full life beyond breast cancer.
                 </p>
 
-                <Box style={{ textAlign: "left", padding: "20px" }}>
+                <Box sx={{ textAlign: "left", padding: "20px" }}>
                   <Button variant="contained" href="#">
                     {" "}
                     Learn More
                   </Button>
                 </Box>
+              </Item>
+            </Grid>
+            <Grid item sm={6}>
+              <Item>
+                <Stack spacing={2}>
+                  <Item>
+                    <Image
+                      sx={{ width: "100%", height: 200 }}
+                      src="/assets/img2.png"
+                    />
+                  </Item>
+                  <Item>
+                    {" "}
+                    <Image
+                      sx={{ width: "100%", height: 200 }}
+                      src="/assets/img3.png"
+                    />
+                  </Item>
+                </Stack>
               </Item>
             </Grid>
           </Grid>
@@ -161,50 +171,53 @@ export default function HomeBody() {
             alignItems="center"
             style={{ paddingBottom: "20px" }}
           >
-            <Grid item sm={8}>
+            <Grid item sm={6}>
               <Item>
-                <h3>About You</h3>
+                <h3 style={{ color: "purple" }}>About You</h3>
 
                 <h1>We Are Provide Modern Service Care... </h1>
                 <p>
                   {" "}
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. <br />
-                  Lorem Ipsum has been the industry's standard dummy text
-                  ever.Lorem Ipsum is <br />
-                  simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the <br /> industry's standard dummy text
-                  ever
+                  After skin cancer, breast cancer is the most common cancer
+                  diagnosed in women in the United States. Breast cancer can
+                  occur in both men and women, but it's far more common in
+                  women.
                 </p>
               </Item>
             </Grid>
-            <Grid item sm={4}>
+            <Grid item sm={6}>
               <Item>
                 <Image
-                  style={{ width: 200, height: 200 }}
-                  src="/assets/illustrations/illustration_login.png"
+                  sx={{ width: "100%", height: 200 }}
+                  src="/assets/img4.webp"
                 />
               </Item>
             </Grid>
           </Grid>
 
-          <Stack direction="row" spacing={2}>
+          <Stack
+            direction={{ xs: "column", sm: "column", md: "row" }}
+            spacing={2}
+          >
             <Item>
               <Textf
                 sub="Concerned about my risk "
-                des=" Lorem Ipsum is simply dummy text of  "
+                des=" A variety of factors can contribute to an individual's breast cancer risk. Learn about your risk leveland how you can take to lower your risk."
+                image="/assets/img8.svg"
               />
             </Item>
             <Item>
               <Textf
-                sub="Concerned about my risk "
-                des=" Lorem Ipsum is simply dummy text of  "
+                sub="In treatment "
+                des="Learn how to effectively work with your doctors, manage potential side effects, and navigate the many changes in your daily life while undergoing "
+                image="/assets/img8.svg"
               />
             </Item>
             <Item>
               <Textf
-                sub="Concerned about my risk "
-                des=" Lorem Ipsum is simply dummy text of  "
+                sub="Hope chat"
+                des=" Hope is a chat-bot based on Knowledge Based designed to prescreen women for female breast cancer symptoms via a textual question answer   "
+                image="/assets/img8.svg"
               />
             </Item>
           </Stack>
