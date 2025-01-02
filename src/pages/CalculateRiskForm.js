@@ -104,7 +104,7 @@ export default function CalculateRiskForm() {
         <Grid container spacing={2}>
           <Grid item xs={4} sx={{ textAlign: "center" }}>
             {" "}
-            <IconButton>
+            <IconButton href="/risk-level-prediction">
               <ArrowCircleLeftOutlinedIcon />
             </IconButton>
           </Grid>

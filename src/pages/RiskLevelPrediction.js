@@ -58,7 +58,7 @@ export default function RiskLevelPrediction() {
             <Box style={{ padding: "10px", textAlign: "right" }}>
               <Button
                 variant="contained"
-                href="#"
+                href="/calculate-risk-form"
                 style={{ textAlign: "center" }}
               >
                 {" "}

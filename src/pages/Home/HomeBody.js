@@ -233,7 +233,7 @@ export default function HomeBody() {
                 sub="In treatment "
                 des="Learn how to effectively work with your doctors, manage potential side effects, and navigate the many changes in your daily life while undergoing "
                 image="/assets/img9.png"
-                href="/"
+                href="/survival-prediction"
               />
             </Item>
             <Item>

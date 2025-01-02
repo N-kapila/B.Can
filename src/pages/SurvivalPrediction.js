@@ -36,40 +36,36 @@ export default function SurvivalPrediction() {
             </h1>
 
             <h4 style={{ paddingBottom: "40px" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              There are more breast cancer treatment options available today
+              than ever before. While that's great news for your chances of
+              successful treatment, going through treatment can be tough.
+              Wherever you are in the process, we are here for you with
+              information and support.
             </h4>
             <p>
-              Everyone has some risk of developing breast cancer,but there are
-              many factors that can increase or decrease each individual
-              person's breast cancer risk.
+              There are more breast cancer treatment options available today
+              than ever before. While that's great news for your chances of
+              successful treatment, going through treatment can be tough, to say
+              the least.
             </p>
             <br />
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              You may be recovering from surgery or experiencing troubling
+              treatment side effects. Perhaps you are dealing with the
+              challenges of balancing treatment with family and work
+              obligations, or trying to keep a brave face for your loved ones
+              while you're not feeling very well. You are not alone. Whatever
+              your treatment plan includes, and wherever you are in the process,
+              we are here for you with information and support to help you get
+              through this challenging time in your life. Here are some
+              resources for those of you who are actively being treated for
+              breast cancer right now.
             </p>
 
             <Box style={{ padding: "10px", textAlign: "right" }}>
               <Button
                 variant="contained"
-                href="#"
+                href="/predict-survival-form"
                 style={{ textAlign: "center" }}
               >
                 {" "}
