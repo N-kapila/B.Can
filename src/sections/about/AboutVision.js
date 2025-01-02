@@ -1,9 +1,9 @@
-import { m } from 'framer-motion';
+import { m } from "framer-motion";
 // @mui
-import { Box, Container, Typography, Grid } from '@mui/material';
+import { Box, Container, Typography, Grid } from "@mui/material";
 // components
-import Image from '../../components/Image';
-import { MotionViewport, varFade } from '../../components/animate';
+import Image from "../../components/Image";
+import { MotionViewport, varFade } from "../../components/animate";
 
 // ----------------------------------------------------------------------
 
@@ -13,9 +13,9 @@ export default function AboutVision() {
       <Box
         sx={{
           mb: 10,
-          position: 'relative',
+          position: "relative",
           borderRadius: 2,
-          overflow: 'hidden',
+          overflow: "hidden",
         }}
       >
         <Image
@@ -27,24 +27,24 @@ export default function AboutVision() {
         <Box
           sx={{
             bottom: { xs: 24, md: 80 },
-            width: '100%',
-            display: 'flex',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-            position: 'absolute',
-            justifyContent: 'center',
+            width: "100%",
+            display: "flex",
+            flexWrap: "wrap",
+            alignItems: "center",
+            position: "absolute",
+            justifyContent: "center",
           }}
         >
-          {['logo_amazon', 'logo_hbo', 'logo_ibm', 'logo_lya', 'logo_spotify', 'logo_netflix'].map((logo) => (
+          {[
+            "logo_amazon",
+            "logo_hbo",
+            "logo_ibm",
+            "logo_lya",
+            "logo_spotify",
+            "logo_netflix",
+          ].map((logo) => (
             <m.div key={logo} variants={varFade().in}>
-              <Image
-                alt={logo}
-                src={`https://minimal-assets-api-dev.vercel.app/assets/images/logos/${logo}.svg`}
-                sx={{
-                  m: { xs: 1.5, md: 3 },
-                  height: { xs: 24, md: 32 },
-                }}
-              />
+              <Image alt={logo} src="assets/img17.jpg" />
             </m.div>
           ))}
         </Box>
@@ -53,8 +53,10 @@ export default function AboutVision() {
       <Grid container justifyContent="center">
         <Grid item xs={12} sm={8}>
           <m.div variants={varFade().inUp}>
-            <Typography variant="h3" sx={{ textAlign: 'center' }}>
-              Our vision offering the best product nulla vehicula tortor scelerisque ultrices malesuada.
+            <Typography variant="h3" sx={{ textAlign: "center" }}>
+              Our mission is to help people make sense of the complex medical
+              and personal information about breast health and breast cancer, so
+              they can make the best decisions for their lives.
             </Typography>
           </m.div>
         </Grid>

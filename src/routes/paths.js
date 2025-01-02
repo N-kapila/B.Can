@@ -25,7 +25,7 @@ export const PATH_PAGE = {
   maintenance: "/maintenance",
   pricing: "/pricing",
   payment: "/payment",
-  about: "/about-us",
+  about: "/about",
   contact: "/contact-us",
   faqs: "/faqs",
   mammography1: "/mammography-1",

@@ -116,7 +116,7 @@ export default function HomeBody() {
                     pt: "20px",
                   }}
                 >
-                  <Button variant="outlined" href="#">
+                  <Button variant="outlined" href="/about">
                     {" "}
                     About us
                   </Button>
@@ -157,7 +157,7 @@ export default function HomeBody() {
                 </p>
 
                 <Box sx={{ textAlign: "left", padding: "20px" }}>
-                  <Button variant="contained" href="#">
+                  <Button variant="contained" href="/for-you">
                     {" "}
                     Learn More
                   </Button>

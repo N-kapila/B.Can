@@ -174,6 +174,7 @@ export default function Router() {
         { path: "*", element: <Home /> },
         { path: "chat-box", element: <ChatBox /> },
         { path: "temp", element: <Temp /> },
+        { path: "about", element: <About /> },
         { path: "admin-mammography-1", element: <AdminMammography1 /> },
         { path: "admin-mammography-2", element: <AdminMammography2 /> },
         { path: "admin-mammography-3", element: <AdminMammography3 /> },
