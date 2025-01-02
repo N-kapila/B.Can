@@ -73,7 +73,11 @@ function Textf(props) {
         <p>{props.des}</p>
       </Box>
       <Box style={{ textAlign: "right" }}>
-        <IconButton aria-label="submit" style={{ padding: "10px" }}>
+        <IconButton
+          aria-label="submit"
+          style={{ padding: "10px" }}
+          onClick={() => (window.location.href = props.href)}
+        >
           <ArrowForwardIcon />
         </IconButton>
       </Box>
@@ -221,6 +225,7 @@ export default function HomeBody() {
                 sub="Concerned about my risk "
                 des=" A variety of factors can contribute to an individual's breast cancer risk. Learn about your risk leveland how you can take to lower your risk."
                 image="/assets/img8.svg"
+                href="/risk-level-prediction"
               />
             </Item>
             <Item>
@@ -228,6 +233,7 @@ export default function HomeBody() {
                 sub="In treatment "
                 des="Learn how to effectively work with your doctors, manage potential side effects, and navigate the many changes in your daily life while undergoing "
                 image="/assets/img9.png"
+                href="/"
               />
             </Item>
             <Item>
@@ -235,6 +241,7 @@ export default function HomeBody() {
                 sub="Hope chat"
                 des=" Hope is a chat-bot based on Knowledge Based designed to prescreen women for female breast cancer symptoms via a textual question answer   "
                 image="/assets/img10.png"
+                href="/chat-box"
               />
             </Item>
           </Stack>

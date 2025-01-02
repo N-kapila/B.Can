@@ -29,7 +29,7 @@ export default function SurvivalPrediction() {
         alignItems="flex-start"
         style={{ paddingTop: "40px" }}
       >
-        <Grid item sm={8}>
+        <Grid item md={8}>
           <Item>
             <h1 style={{ fontSize: "50px" }}>
               In <br /> Treatment
@@ -79,9 +79,9 @@ export default function SurvivalPrediction() {
           </Item>
         </Grid>
 
-        <Grid item sm={3}>
+        <Grid item md={3}>
           <Item>
-            <Image src="/assets/illustrations/illustration_login.png" />
+            <Image src="/assets/img9.png" />
 
             <Box style={{ padding: "20px" }}>
               <a

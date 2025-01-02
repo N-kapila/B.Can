@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
 import * as Yup from "yup";
 // form
 import { useForm } from "react-hook-form";
@@ -7,7 +6,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 // @mui
 import {
   Box,
-  Button,
   IconButton,
   Typography,
   styled,
@@ -24,7 +22,7 @@ import ArrowCircleLeftOutlinedIcon from "@mui/icons-material/ArrowCircleLeftOutl
 import { LoadingButton } from "@mui/lab";
 // components
 import Page from "../components/Page";
-import { FormProvider, RHFTextField } from "src/components/hook-form";
+import { FormProvider } from "src/components/hook-form";
 
 // ----------------------------------------------------------------------
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -75,7 +73,6 @@ export default function CalculateRiskForm() {
   });
 
   const {
-    reset,
     setError,
     handleSubmit,
     formState: { errors, isSubmitting },
@@ -105,7 +102,7 @@ export default function CalculateRiskForm() {
     <Page title="Calculate Risk Form">
       <ContentStyle>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={4} sx={{ textAlign: "center" }}>
             {" "}
             <IconButton>
               <ArrowCircleLeftOutlinedIcon />

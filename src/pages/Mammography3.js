@@ -2,7 +2,7 @@ import { m } from "framer-motion";
 import * as React from "react";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Box, Button, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";

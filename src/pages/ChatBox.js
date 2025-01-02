@@ -38,8 +38,8 @@ const ChatBox = () => {
   return (
     <Page title="Chat Box">
       <Box>
-        <Box sx={{ padding: "10px" }}>
-          <IconButton>
+        <Box sx={{ p: 5 }}>
+          <IconButton href="/">
             <ArrowCircleLeftOutlinedIcon />
           </IconButton>
         </Box>
@@ -90,9 +90,13 @@ const ChatBox = () => {
               <Divider />
               <Grid
                 container
-                style={{ padding: "20px", backgroundColor: "#DA72DA" }}
+                style={{
+                  padding: "20px",
+                  backgroundColor: "#DA72DA",
+                  display: "flex",
+                }}
               >
-                <Grid item xs={11}>
+                <Grid item xs={10} md={11}>
                   <TextField
                     variant="filled"
                     label="Type Here......."
@@ -100,8 +104,13 @@ const ChatBox = () => {
                     style={{ backgroundColor: "white", borderRadius: "5px" }}
                   />
                 </Grid>
-                <Grid xs={1} align="right">
-                  <Fab color="secondary" aria-label="add">
+                <Grid
+                  xs={2}
+                  md={1}
+                  align="right"
+                  style={{ paddingLeft: "10px" }}
+                >
+                  <Fab color="secondary" aria-label="add" size="medium">
                     <SendIcon />
                   </Fab>
                 </Grid>

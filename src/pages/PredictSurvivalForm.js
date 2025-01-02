@@ -55,7 +55,7 @@ export default function PredictSurvivalForm() {
     <Page title="Predict Survival Form">
       <ContentStyle>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={4} sx={{ textAlign: "center" }}>
             <IconButton>
               <ArrowCircleLeftOutlinedIcon />
             </IconButton>

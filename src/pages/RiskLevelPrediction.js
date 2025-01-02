@@ -6,7 +6,6 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 // components
 import Page from "../components/Page";
-import Image from "src/components/Image";
 
 // ----------------------------------------------------------------------
 
@@ -29,7 +28,7 @@ export default function RiskLevelPrediction() {
         alignItems="flex-start"
         style={{ paddingTop: "50px" }}
       >
-        <Grid item sm={8}>
+        <Grid item md={8}>
           <Item>
             <h1 style={{ fontSize: "50px" }}>
               Concerned <br /> About My Risk
@@ -47,16 +46,13 @@ export default function RiskLevelPrediction() {
             </p>
             <br />
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              If you are uncertain about your own risk of breast cancer, it can
+              help to learn about the known risk factors and steps you can take
+              to lower your risk as much as possible. Or if you know you have a
+              higher risk of breast cancer due to factors such as a strong
+              family cancer history or an inherited genetic mutation, you can
+              learn more about those risk factors and risk reduction treatments
+              that may be available to
             </p>
 
             <Box style={{ padding: "10px", textAlign: "right" }}>
@@ -72,9 +68,9 @@ export default function RiskLevelPrediction() {
           </Item>
         </Grid>
 
-        <Grid item sm={3}>
+        <Grid item md={3}>
           <Item>
-            <Image src="/assets/illustrations/illustration_login.png" />
+            <img src="/assets/img8.svg" height={200} width={200} alt="img" />
 
             <Box style={{ padding: "20px" }}>
               <a

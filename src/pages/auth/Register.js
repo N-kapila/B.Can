@@ -2,8 +2,6 @@ import { Link as RouterLink } from "react-router-dom";
 // @mui
 import { styled } from "@mui/material/styles";
 import { Box, Link, Typography } from "@mui/material";
-// hooks
-import useResponsive from "../../hooks/useResponsive";
 // routes
 import { PATH_AUTH } from "../../routes/paths";
 // components
@@ -22,22 +20,22 @@ const RootStyle = styled("div")(({ theme }) => ({
   },
 }));
 
-const ContentStyle = styled("div")(({ theme }) => ({
-  maxWidth: 480,
-  margin: "auto",
-  minHeight: "100vh",
-  display: "flex",
-  justifyContent: "center",
-  flexDirection: "column",
-  padding: theme.spacing(12, 0),
-}));
+// const ContentStyle = styled("div")(({ theme }) => ({
+//   maxWidth: 480,
+//   margin: "auto",
+//   minHeight: "100vh",
+//   display: "flex",
+//   justifyContent: "center",
+//   flexDirection: "column",
+//   padding: theme.spacing(12, 0),
+// }));
 
 // ----------------------------------------------------------------------
 
 export default function Register() {
-  const smUp = useResponsive("up", "sm");
+  // const smUp = useResponsive("up", "sm");
 
-  const mdUp = useResponsive("up", "md");
+  // const mdUp = useResponsive("up", "md");
 
   return (
     <Page title="Register">
