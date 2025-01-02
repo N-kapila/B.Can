@@ -31,7 +31,7 @@ export default function Maintenance() {
     <Page title="Maintenance">
       <Container>
         <ContentStyle sx={{ textAlign: "center", alignItems: "center" }}>
-          <Typography variant="h3" paragraph>
+          {/* <Typography variant="h3" paragraph>
             Website currently under maintenance
           </Typography>
 
@@ -39,7 +39,7 @@ export default function Maintenance() {
             We are currently working hard on this page!
           </Typography>
 
-          <MaintenanceIllustration sx={{ my: 10, height: 240 }} />
+          <MaintenanceIllustration sx={{ my: 10, height: 240 }} /> */}
 
           <Button
             variant="contained"

@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   messageArea: {
     height: "70vh",
     overflowY: "auto",
-    backgroundColor: "#FBD2FB",
+    backgroundColor: "#ebcaf7",
   },
 });
 
@@ -64,7 +64,7 @@ const ChatBox = () => {
                       align="left"
                       primary="Hello, I'm Yeshi..."
                       style={{
-                        backgroundColor: "#DE52DE",
+                        backgroundColor: "#cd81e7 ",
                         padding: "10px",
                         borderRadius: "50px",
                       }}
@@ -78,7 +78,7 @@ const ChatBox = () => {
                         align="right"
                         primary="Hola"
                         style={{
-                          backgroundColor: "#DE52DE",
+                          backgroundColor: "#cd81e7 ",
                           padding: "10px",
                           borderRadius: "50px",
                         }}
@@ -92,7 +92,7 @@ const ChatBox = () => {
                 container
                 style={{
                   padding: "20px",
-                  backgroundColor: "#DA72DA",
+                  backgroundColor: "#974eb0 ",
                   display: "flex",
                 }}
               >

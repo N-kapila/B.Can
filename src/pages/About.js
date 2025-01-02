@@ -3,13 +3,7 @@ import { styled } from "@mui/material/styles";
 import { Divider, Box } from "@mui/material";
 // components
 import Page from "../components/Page";
-import {
-  AboutHero,
-  AboutWhat,
-  AboutTeam,
-  AboutVision,
-  AboutTestimonials,
-} from "../sections/about";
+import { AboutHero, AboutWhat, AboutVision } from "../sections/about";
 import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
