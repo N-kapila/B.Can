@@ -51,7 +51,9 @@ export default function RowAndColumnSpacing() {
           </h2>
 
           <Box sx={{ padding: "10px", textAlign: "left" }}>
-            <Button variant="contained">Donate</Button>
+            <Button href="/payment" variant="contained">
+              Donate
+            </Button>
           </Box>
 
           <Box sx={{ mt: 2 }}>
@@ -99,7 +101,7 @@ export default function RowAndColumnSpacing() {
               textAlign: { xs: "left", md: "left" },
             }}
           >
-            © 2022 Breastcancer.org- All rights reserved
+            © 2024 Breastcancer.org- All rights reserved
           </Typography>
         </Grid>
       </Grid>

@@ -1,5 +1,5 @@
 // @mui
-import { Typography, TextField, Stack } from '@mui/material';
+import { Typography, TextField, Stack } from "@mui/material";
 
 // ----------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ export default function PaymentBillingAddress() {
         <TextField fullWidth label="Person name" />
         <TextField fullWidth label="Phone number" />
         <TextField fullWidth label="Email" />
-        <TextField fullWidth label="Address" />
+        <TextField fullWidth label="Amount" />
       </Stack>
     </div>
   );

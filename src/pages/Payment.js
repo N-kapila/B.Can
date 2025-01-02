@@ -1,17 +1,22 @@
 // @mui
-import { styled } from '@mui/material/styles';
-import { Box, Grid, Container, Typography } from '@mui/material';
+import { styled } from "@mui/material/styles";
+import { Box, Grid, Container, Typography } from "@mui/material";
 // hooks
-import useResponsive from '../hooks/useResponsive';
+import useResponsive from "../hooks/useResponsive";
 // components
-import Page from '../components/Page';
+import Page from "../components/Page";
 // sections
-import { PaymentSummary, PaymentMethods, PaymentBillingAddress } from '../sections/payment';
+import {
+  PaymentSummary,
+  PaymentMethods,
+  PaymentBillingAddress,
+} from "../sections/payment";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 
-const RootStyle = styled('div')(({ theme }) => ({
-  minHeight: '100%',
+const RootStyle = styled("div")(({ theme }) => ({
+  minHeight: "100%",
   paddingTop: theme.spacing(15),
   paddingBottom: theme.spacing(10),
 }));
@@ -19,18 +24,22 @@ const RootStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function Payment() {
-  const isDesktop = useResponsive('up', 'md');
+  const isDesktop = useResponsive("up", "md");
 
   return (
     <Page title="Payment">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
       <RootStyle>
         <Container>
           <Box sx={{ mb: 5 }}>
             <Typography variant="h3" align="center" paragraph>
               Let's finish powering you up!
             </Typography>
-            <Typography align="center" sx={{ color: 'text.secondary' }}>
-              Professional plan is right for you.
+            <Typography align="center" sx={{ color: "text.secondary" }}>
+              Our comprehensive solutions are designed to support breast cancer
+              patients every step of the way.
             </Typography>
           </Box>
 
@@ -38,12 +47,17 @@ export default function Payment() {
             <Grid item xs={12} md={8}>
               <Box
                 sx={{
-                  display: 'grid',
+                  display: "grid",
                   gap: 5,
                   p: { md: 5 },
                   borderRadius: 2,
-                  border: (theme) => ({ md: `dashed 1px ${theme.palette.divider}` }),
-                  gridTemplateColumns: { xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' },
+                  border: (theme) => ({
+                    md: `dashed 1px ${theme.palette.divider}`,
+                  }),
+                  gridTemplateColumns: {
+                    xs: "repeat(1, 1fr)",
+                    md: "repeat(2, 1fr)",
+                  },
                 }}
               >
                 <PaymentBillingAddress />

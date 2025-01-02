@@ -1,16 +1,9 @@
 import { Link as RouterLink } from "react-router-dom";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Button, Typography, Container } from "@mui/material";
+import { Button, Container } from "@mui/material";
 // components
 import Page from "../components/Page";
-//
-import { MaintenanceIllustration } from "../assets";
-import {
-  NavSectionMini,
-  NavSectionVertical,
-  NavSectionHorizontal,
-} from "src/components/nav-section";
 
 // ----------------------------------------------------------------------
 
