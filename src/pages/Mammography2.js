@@ -45,25 +45,22 @@ export default function Mammography2() {
       <React.Fragment>
         <CssBaseline />
         <Container fixed>
-          <img
-            src="https://chartio.com/assets/dfd59f/tutorials/charts/grouped-bar-charts/c1fde6017511bbef7ba9bb245a113c07f8ff32173a7c0d742a4e1eac1930a3c5/grouped-bar-example-1.png"
-            alt=" "
-          />
+          <img src="assets/chart1.png" alt="data chart" />
         </Container>
       </React.Fragment>
       <div style={{ padding: "50px" }}>
         <h6>The following must be cited when reproducing his data:</h6>
         <br />
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          "The Breast Cancer Surveillance Consortium and its data collection and
+          sharing activities are funded by grants from the National Cancer
+          Institute (PO1CA154292, U54CA163303), Patient-Centered Outcomes
+          Research Institute (PCS-1504-30370), and Agency for Health Research
+          and Quality (R01 HSO18366-01A1). Downloaded xx/xx/xxxx from the Breast
+          Cancer Surveillance Consortium Web site -
+          http://www.bcsc-research.org/. More information regarding the BCSC is
+          available at:{" "}
+          <a href="http://bcsc-research.org/"> http://bcsc-research.org/</a>."
         </p>
         <div style={{ padding: "20px", textAlign: "right" }}>
           <Button variant="contained" href="#" style={{ textAlign: "center" }}>

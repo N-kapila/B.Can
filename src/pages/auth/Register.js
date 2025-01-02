@@ -1,7 +1,7 @@
 import { Link as RouterLink } from "react-router-dom";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Box, Link, Container, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 // hooks
 import useResponsive from "../../hooks/useResponsive";
 // routes
@@ -13,7 +13,6 @@ import { RegisterForm } from "../../sections/auth/register";
 import { Icon } from "@iconify/react";
 
 import Grid from "@mui/material/Grid";
-import Label from "src/components/Label";
 
 // ----------------------------------------------------------------------
 
