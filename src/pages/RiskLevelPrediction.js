@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 // components
 import Page from "../components/Page";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 
@@ -21,6 +22,9 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function RiskLevelPrediction() {
   return (
     <Page title="Risk Level Prediction">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
       <Grid
         container
         direction="row"

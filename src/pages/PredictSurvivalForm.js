@@ -4,7 +4,6 @@ import {
   Box,
   Button,
   Typography,
-  IconButton,
   styled,
   Grid,
   Paper,
@@ -14,9 +13,9 @@ import {
   FormControl,
   InputLabel,
 } from "@mui/material";
-import ArrowCircleLeftOutlinedIcon from "@mui/icons-material/ArrowCircleLeftOutlined";
 // components
 import Page from "../components/Page";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -53,13 +52,12 @@ export default function PredictSurvivalForm() {
 
   return (
     <Page title="Predict Survival Form">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
       <ContentStyle>
         <Grid container spacing={2}>
-          <Grid item xs={4} sx={{ textAlign: "center" }}>
-            <IconButton href="/survival-prediction">
-              <ArrowCircleLeftOutlinedIcon />
-            </IconButton>
-          </Grid>
+          <Grid item xs={4} sx={{ textAlign: "center" }}></Grid>
           <Grid item xs={8}>
             <Typography variant="h3" paragraph>
               Predict Survival

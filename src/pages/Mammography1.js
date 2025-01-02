@@ -12,6 +12,7 @@ import { Typography, Container, Box, Button } from "@mui/material";
 // components
 import Page from "../components/Page";
 import NavbarVertical from "src/layouts/dashboard/navbar/NavbarVertical";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 
@@ -62,6 +63,10 @@ const rows = [
 export default function Mammography1() {
   return (
     <Page title="Mammography 1">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
+
       <Container>
         <ContentStyle sx={{ textAlign: "center", alignItems: "center" }}>
           <m.div>

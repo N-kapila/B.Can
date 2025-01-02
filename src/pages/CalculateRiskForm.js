@@ -6,7 +6,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 // @mui
 import {
   Box,
-  IconButton,
   Typography,
   styled,
   Grid,
@@ -18,11 +17,11 @@ import {
   InputLabel,
   Alert,
 } from "@mui/material";
-import ArrowCircleLeftOutlinedIcon from "@mui/icons-material/ArrowCircleLeftOutlined";
 import { LoadingButton } from "@mui/lab";
 // components
 import Page from "../components/Page";
 import { FormProvider } from "src/components/hook-form";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 const ContentStyle = styled("div")(({ theme }) => ({
@@ -100,13 +99,13 @@ export default function CalculateRiskForm() {
 
   return (
     <Page title="Calculate Risk Form">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
       <ContentStyle>
         <Grid container spacing={2}>
           <Grid item xs={4} sx={{ textAlign: "center" }}>
             {" "}
-            <IconButton href="/risk-level-prediction">
-              <ArrowCircleLeftOutlinedIcon />
-            </IconButton>
           </Grid>
           <Grid item xs={8}>
             <Typography variant="h3" paragraph>

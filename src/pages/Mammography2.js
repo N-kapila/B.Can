@@ -7,6 +7,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 // components
 import Page from "../components/Page";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +25,9 @@ const ContentStyle = styled("div")(({ theme }) => ({
 export default function Mammography2() {
   return (
     <Page title="Mammography 2">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
       <ContentStyle sx={{ textAlign: "center", alignItems: "center" }}>
         <m.div>
           <Typography variant="h3" paragraph>

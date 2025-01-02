@@ -2,13 +2,14 @@ import { m } from "framer-motion";
 import * as React from "react";
 // @mui
 import { styled } from "@mui/material/styles";
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 // components
 import Page from "../components/Page";
 import Image from "src/components/Image";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 
@@ -34,6 +35,9 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Mammography3() {
   return (
     <Page title="Mammography 3">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
       <ContentStyle sx={{ textAlign: "center", alignItems: "center" }}>
         <m.div>
           <Typography variant="h3" paragraph>

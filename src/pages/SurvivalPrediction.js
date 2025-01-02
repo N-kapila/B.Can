@@ -7,6 +7,7 @@ import Paper from "@mui/material/Paper";
 // components
 import Page from "../components/Page";
 import Image from "src/components/Image";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 
@@ -22,6 +23,9 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function SurvivalPrediction() {
   return (
     <Page title="Survival Prediction">
+      <Box sx={{ mb: 5 }}>
+        <HomeHeader />
+      </Box>
       <Grid
         container
         direction="row"

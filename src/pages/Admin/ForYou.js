@@ -2,10 +2,14 @@ import React from "react";
 import { Box, Grid, Typography, Stack, Link, CardMedia } from "@mui/material";
 
 import Image from "src/components/Image";
+import HomeHeader from "../Home/HomeHeader";
 
 export default function ForYou() {
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ mb: 8 }}>
+        <HomeHeader />
+      </Box>
       <Grid
         spacing={2}
         item
@@ -36,7 +40,7 @@ export default function ForYou() {
             <Stack spacing={2}>
               <Box sx={{ display: "flex" }}>
                 <Link
-                  href="#"
+                  href="/risk-level-prediction"
                   underline="hover"
                   color="inherit"
                   sx={{ paddingRight: "100px" }}
@@ -50,7 +54,7 @@ export default function ForYou() {
               <hr />
               <Box sx={{ display: "flex" }}>
                 <Link
-                  href="#"
+                  href="/survival-prediction"
                   underline="hover"
                   color="inherit"
                   sx={{ paddingRight: "145px" }}

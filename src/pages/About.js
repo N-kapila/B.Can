@@ -1,6 +1,6 @@
 // @mui
 import { styled } from "@mui/material/styles";
-import { Divider } from "@mui/material";
+import { Divider, Box } from "@mui/material";
 // components
 import Page from "../components/Page";
 import {
@@ -10,6 +10,7 @@ import {
   AboutVision,
   AboutTestimonials,
 } from "../sections/about";
+import HomeHeader from "./Home/HomeHeader";
 
 // ----------------------------------------------------------------------
 
@@ -25,6 +26,9 @@ const RootStyle = styled("div")(({ theme }) => ({
 export default function About() {
   return (
     <Page title="About us">
+      <Box>
+        <HomeHeader />
+      </Box>
       <RootStyle>
         <AboutHero />
 
