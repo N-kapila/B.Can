@@ -7,8 +7,8 @@ import {
   Button,
   Typography,
   styled,
-  Breadcrumbs,
-  Link,
+  IconButton,
+  Badge,
   Table,
   TableBody,
   TableContainer,
@@ -16,6 +16,8 @@ import {
   TableRow,
   Paper,
 } from "@mui/material";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 
 //----------------------------------------------------------------
@@ -32,6 +34,12 @@ function handleClick(event) {
   event.preventDefault();
   console.info("You clicked a breadcrumb.");
 }
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+}));
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -85,6 +93,17 @@ const rows = [
 export default function UserManagement() {
   return (
     <Page title="User manegement">
+      <Item sx={{ textAlign: "right" }}>
+        <IconButton color="secondary">
+          <Badge badgeContent={2} color="error">
+            <NotificationsIcon fontSize="large" />
+          </Badge>
+        </IconButton>
+        <IconButton color="secondary">
+          <AccountCircleIcon fontSize="large" />
+        </IconButton>
+      </Item>
+
       <ContentStyle>
         <m.div>
           <Typography variant="h3" paragraph>
@@ -93,14 +112,14 @@ export default function UserManagement() {
         </m.div>
       </ContentStyle>
 
-      <Box role="presentation" onClick={handleClick}>
+      {/* <Box role="presentation" onClick={handleClick}>
         <Breadcrumbs aria-label="breadcrumb">
           <Link underline="hover" color="inherit" href="/">
             Dashboard
           </Link>
           <Typography color="text.primary">User Management</Typography>
         </Breadcrumbs>
-      </Box>
+      </Box> */}
 
       <TableContainer component={Paper} sx={{ paddingTop: "20px" }}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">

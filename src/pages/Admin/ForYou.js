@@ -45,10 +45,7 @@ export default function ForYou() {
                         Concerned <br /> About My Risk{" "}
                       </h2>
                     </Link>
-                    <CardMedia
-                      sx={{ width: 100 }}
-                      image="/assets/illustrations/illustration_login.png"
-                    />
+                    <CardMedia sx={{ width: 70 }} image="/assets/img8.svg" />
                   </Box>
                   <hr />
                   <Box sx={{ display: "flex" }}>
@@ -62,17 +59,14 @@ export default function ForYou() {
                         In <br /> Treatment{" "}
                       </h2>
                     </Link>
-                    <CardMedia
-                      sx={{ width: 100 }}
-                      image="/assets/illustrations/illustration_login.png"
-                    />
+                    <CardMedia sx={{ width: 100 }} image="/assets/img9.png" />
                   </Box>
                 </Stack>
               </Box>
             </Grid>
 
             <Grid item md={5}>
-              <Image src="/assets/illustrations/illustration_login.png" />
+              <Image src="/assets/img13.jpeg" />
             </Grid>
           </Grid>
         </Grid>

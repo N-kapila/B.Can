@@ -81,7 +81,7 @@ export default function Settings() {
   const userinfo = collection(db, "userDetails");
 
   const onSubmit = async (data) => {
-    if (name.length == 0 || email.length == 0) {
+    if (name.length === 0 || email.length === 0) {
       setError("afterSubmit", { message: "Name and Email required" });
       return;
     }
@@ -138,9 +138,6 @@ export default function Settings() {
 
       <Box>
         <Breadcrumbs aria-label="breadcrumb">
-          <Link underline="hover" color="inherit" href="/">
-            Dashboard
-          </Link>
           <Link underline="hover" color="inherit" href="/">
             User
           </Link>

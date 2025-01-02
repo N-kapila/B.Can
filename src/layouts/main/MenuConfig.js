@@ -20,7 +20,7 @@ const menuConfig = [
   {
     title: "Admin",
     icon: <Iconify icon={"gg:profile"} {...ICON_SIZE} />,
-    path: PATH_PAGE.admin_settings,
+    path: PATH_PAGE.admin_user_management,
   },
   {
     title: "Services",
@@ -62,30 +62,9 @@ const menuConfig = [
         items: [{ title: "Chat Box", path: PATH_PAGE.chat_box }],
       },
 
-      // { title: "temp", path: PATH_PAGE.temp },
-      // { title: "Admin Mammo 1", path: PATH_PAGE.admin_mammography1 },
-      // { title: "Admin Mammo 2", path: PATH_PAGE.admin_mammography2 },
-      // { title: "Admin Mammo 3", path: PATH_PAGE.admin_mammography3 },
-      // {
-      //   title: "Admin Risk Level",
-      //   path: PATH_PAGE.admin_risk_level_prediction,
-      // },
-      // {
-      //   title: "Admin Survival Prediction",
-      //   path: PATH_PAGE.admin_survival_prediction,
-      // },
       // {
       //   title: "For you",
       //   path: PATH_PAGE.for_you,
-      // },
-      // { title: "Admin Settings", path: PATH_PAGE.admin_settings },
-      // {
-      //   title: "Admin User Management",
-      //   path: PATH_PAGE.admin_user_management,
-      // },
-      // {
-      //   title: "Admin Knowledge Management",
-      //   path: PATH_PAGE.admin_knowledge_management,
       // },
     ],
   },

@@ -8,8 +8,6 @@ import {
   IconButton,
   Badge,
   Typography,
-  Breadcrumbs,
-  Link,
   Table,
   TableBody,
   TableContainer,
@@ -114,18 +112,6 @@ export default function KnowledgeManagement() {
                 </Typography>
               </m.div>
             </ContentStyle>
-
-            <Box role="presentation" onClick={handleClick}>
-              <Breadcrumbs aria-label="breadcrumb">
-                <Link underline="hover" color="inherit" href="/">
-                  Dashboard
-                </Link>
-                <Typography color="text.primary">
-                  {" "}
-                  Knowledge Management
-                </Typography>
-              </Breadcrumbs>
-            </Box>
           </Item>
 
           <Item>

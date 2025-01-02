@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 // @mui
 import { styled, useTheme } from "@mui/material/styles";
-import { Box, Stack, Drawer } from "@mui/material";
+import { Box, Stack, Drawer, Typography, Link } from "@mui/material";
 // hooks
 import useResponsive from "../../../hooks/useResponsive";
 import useCollapseDrawer from "../../../hooks/useCollapseDrawer";
@@ -12,15 +12,11 @@ import cssStyles from "../../../utils/cssStyles";
 // config
 import { NAVBAR } from "../../../config";
 // components
-import Logo from "../../../components/Logo";
 import Scrollbar from "../../../components/Scrollbar";
 import { NavSectionVertical } from "../../../components/nav-section";
 //
 import navConfig from "./NavConfig";
-import NavbarDocs from "./NavbarDocs";
 import NavbarAccount from "./NavbarAccount";
-import CollapseButton from "./CollapseButton";
-import Label from "src/components/Label";
 
 // ----------------------------------------------------------------------
 
@@ -88,11 +84,29 @@ export default function NavbarVertical({ isOpenSidebar, onCloseSidebar }) {
           direction="row"
           alignItems="center"
           justifyContent="space-between"
+          sx={{
+            display: "flex",
+            pl: 2,
+          }}
         >
-          {/* <Logo /> */}
-          <Label color="info" sx={{ ml: 1 }}>
-            HOPE
-          </Label>
+          {/* Logo  */}
+          <Link
+            href="/"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              textDecoration: "none",
+            }}
+          >
+            <img src="/logo/logo.png" alt="logo" width="30" height="50" />
+            <Typography
+              sx={{ ml: 1, color: "purple", fontFamily: "sans-serif" }}
+              variant="h4"
+              gutterBottom
+            >
+              HOPE
+            </Typography>
+          </Link>
 
           {/* {isDesktop && !isCollapse && (
             <CollapseButton

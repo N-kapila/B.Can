@@ -2,7 +2,6 @@
 import { PATH_PAGE } from "../../../routes/paths";
 // components
 import SvgIconStyle from "../../../components/SvgIconStyle";
-import Badge from "@mui/material/Badge";
 
 // ----------------------------------------------------------------------
 
@@ -92,7 +91,7 @@ const navConfig = [
       },
       {
         title: "Sign out",
-        path: PATH_PAGE.admin_settings,
+        path: PATH_PAGE.maintenance,
         icon: ICONS.booking,
       },
     ],
