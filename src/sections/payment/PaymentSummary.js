@@ -30,7 +30,7 @@ export default function PaymentSummary() {
             variant="subtitle2"
             sx={{ color: "text.secondary" }}
           >
-            Donete Monthly
+            Donate Monthly
           </Typography>
           <Switch defaultChecked />
         </Stack>
@@ -74,7 +74,7 @@ export default function PaymentSummary() {
         variant="contained"
         sx={{ mt: 5, mb: 3 }}
       >
-        Donete Now
+        Donate Now
       </LoadingButton>
 
       <Stack alignItems="center" spacing={1}>
