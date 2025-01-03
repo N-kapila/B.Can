@@ -1,5 +1,5 @@
 node_modules
-src/Config/Firebase.js
 .DS_Store
+.env
 
 
